@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="akoya.ua.com.groupstudent.MainActivity">
+
+    <!-- Main LinearLayout. Contains TextView, LinearLayout with checkBox and button. -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:textSize = "15sp"
+            android:textStyle = "bold"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+
+            android:text="@string/lable" />
+<!-- AllCheckBox LinearLayout contains two different LinearLayout. Horizontal orientation -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+ <!-- OddLinearLayout contains checkBox -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/id_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дмитрй Близнюк"/>
+
+    <CheckBox
+        android:id="@+id/id_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Иван Яковенко"/>
+
+    <CheckBox
+        android:id="@+id/id_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Владислав Кобозев"/>
+
+    <CheckBox
+        android:id="@+id/id_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Богдан Дегтяр" />
+
+    <CheckBox
+        android:id="@+id/id_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Надежда Теряник" />
+
+    <CheckBox
+        android:id="@+id/id_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Руслан Петров" />
+
+    <CheckBox
+        android:id="@+id/id_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Евгений Кощевой" />
+
+    <CheckBox
+        android:id="@+id/id_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Роман Меркулов" />
+</LinearLayout> <!-- Close OddLinearLayout  -->
+
+        <!-- EvenLinearLayout contains checkBox -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/id_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Артем Столбовой" />
+
+        <CheckBox
+            android:id="@+id/id_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Артем Предводителев" />
+
+        <CheckBox
+            android:id="@+id/id_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Алексей Скоробогатько" />
+
+        <CheckBox
+            android:id="@+id/id_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Анастасия Аксёнова" />
+
+        <CheckBox
+            android:id="@+id/id_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Игорь Прокопчук" />
+
+        <CheckBox
+            android:id="@+id/id_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Екатерина Нагорная" />
+
+        <CheckBox
+            android:id="@+id/id_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Михаил Колоний" />
+
+        <CheckBox
+            android:id="@+id/id_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Павел Барченко" />
+    </LinearLayout> <!-- Close EvenLinearLayout  -->
+
+    </LinearLayout> <!-- Close AllCheckBox LinearLayout  -->
+
+
+        <Button
+            android:id="@+id/buttonReady"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Разбить на пары"
+            android:clickable="true"
+            />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/buttonCheckAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:text="Выбрать всех"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/standard"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Стандартный" />
+                <RadioButton
+                    android:id="@+id/random"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Случайный" />
+            </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout> <!-- Close Main LinearLayout -->
+
+</android.support.constraint.ConstraintLayout>

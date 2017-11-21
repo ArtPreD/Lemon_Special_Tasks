@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Разбить студентов по парам</string>
+    <string name="lable">Отметьте присутствующих</string>
+    <string name="button">Готово</string>
+</resources>
