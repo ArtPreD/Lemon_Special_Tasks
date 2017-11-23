@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="false"
+    android:clickable="false"
+    tools:context="meraya.ua.com.students_group.MainActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/label_main"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/checkBoxList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/id_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Dmitriy_Bliznuk" />
+
+            <CheckBox
+                android:id="@+id/id_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Ivan_Yakovlenko" />
+
+            <CheckBox
+                android:id="@+id/id_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Vladislav_Kobozev" />
+
+            <CheckBox
+                android:id="@+id/id_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Bogdan_Degtyar" />
+
+            <CheckBox
+                android:id="@+id/id_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Nadejda_Teryanik" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/id_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ruslan_Petrov" />
+
+        <CheckBox
+            android:id="@+id/id_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Evgeniy_Kosheoy" />
+
+        <CheckBox
+            android:id="@+id/id_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Roman_Merkulov" />
+
+        <CheckBox
+            android:id="@+id/id_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ekaterina_Nagornaya" />
+
+        <CheckBox
+            android:id="@+id/id_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Mihail_Koloniy" />
+
+        <CheckBox
+            android:id="@+id/id_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Pavel_Barchenko" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/id_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Artem_Stolbovoy" />
+
+            <CheckBox
+                android:id="@+id/id_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Artem_Predvoditelev" />
+
+            <CheckBox
+                android:id="@+id/id_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Aleksey_Skorobogatko" />
+
+            <CheckBox
+                android:id="@+id/id_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Anastasiya_Aksenova" />
+
+            <CheckBox
+                android:id="@+id/id_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Igor_Prokopchuk" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxList"
+        android:layout_marginTop="-40dp">
+
+        <Button
+            android:id="@+id/checkAll"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/checkAll"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:id="@+id/ready"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/ready" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/standard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Режим: стандарт" />
+
+        <RadioButton
+            android:id="@+id/random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_weight="1"
+            android:text="Режим: случайно" />
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxList"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
